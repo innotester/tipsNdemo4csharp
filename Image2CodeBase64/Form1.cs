@@ -56,11 +56,11 @@ namespace Image2CodeBase64
                 Image im = Image.FromStream(stream, false, false);
                 image = (Bitmap)im;
                 pictureBox1.Image = image;
-                //pictureBox1.Invalidate();
+                pictureBox1.Invalidate();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("바이너리가 적합하지 않습니다.");
+                MessageBox.Show("Invalid binary data.");
             }
         }
 
